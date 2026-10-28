@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Portfolio of Prem Wadhwani — Computer Science Student and Java Developer specializing in Java technologies, web development, and software engineering.">
+  <meta name="keywords"
+    content="Prem Wadhwani, Java Developer, Portfolio, Computer Science, Web Developer, Backend Developer">
+  <meta name="author" content="Prem Wadhwani">
+  <title>Prem Wadhwani | Java Developer &amp; CS Student</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css?v=1.3">
+
+  <!-- Early theme check to prevent flash -->
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('theme');
+        if (saved === 'light') {
+          document.documentElement.setAttribute('data-theme', 'light');
+        }
+      } catch (e) { }
+    })();
+  </script>
+</head>
+
+<body>
+
+  <!-- ==============================
+       HEADER & NAVIGATION
+       ============================== -->
+  <header class="site-header" id="top">
+    <div class="container header-container">
+      <a class="logo" href="#hero" aria-label="Prem Wadhwani — Home">
+        PW<span class="logo-dot">.</span>
+      </a>
+
+      <!-- CSS-only mobile menu toggle -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation menu">
+        <span class="hamburger"></span>
+      </label>
+
+      <nav id="main-nav" aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#certifications">Certs</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="assets/documents/resume.pdf" class="nav-resume-btn" download>
+              Resume
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- CSS-only theme toggle (light/dark mode) -->
+      <input type="checkbox" id="theme-toggle" class="theme-toggle-input" aria-hidden="true">
+      <label for="theme-toggle" class="theme-toggle-btn" aria-label="Toggle light and dark theme"
+        title="Toggle light and dark theme">
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="5" />
+          <line x1="12" y1="1" x2="12" y2="3" />
+          <line x1="12" y1="21" x2="12" y2="23" />
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+          <line x1="1" y1="12" x2="3" y2="12" />
+          <line x1="21" y1="12" x2="23" y2="12" />
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+        </svg>
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+        </svg>
+      </label>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ==============================
+         HERO SECTION
+         ============================== -->
+    <section class="hero" id="hero">
+      <!-- Decorative floating shapes -->
+      <div class="hero-decoration hero-circle-1" aria-hidden="true"></div>
+      <div class="hero-decoration hero-circle-2" aria-hidden="true"></div>
+      <div class="hero-decoration hero-circle-3" aria-hidden="true"></div>
+
+      <div class="container hero-container">
+        <div class="hero-content">
+          <p class="hero-greeting">
+            <span class="greeting-line" aria-hidden="true">&mdash;</span>
+            Hello, I'm
+          </p>
+          <h1 class="hero-name">Prem Wadhwani</h1>
+          <p class="hero-title">
+            <span class="typed-prefix" aria-hidden="true">&gt;&nbsp;</span>Computer Science Student
+            <span class="hero-separator" aria-hidden="true">&bull;</span>
+            Java Developer
+          </p>
+          <p class="hero-tagline">
+            Building robust applications with Java &mdash; from web systems to desktop solutions.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">
+              View My Projects
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+            <a href="assets/documents/resume.pdf" class="btn btn-ghost" download>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+              Download Resume
+            </a>
+          </div>
+
+          <div class="hero-social">
+            <a href="https://github.com/PremWadhwani" target="_blank" rel="noopener noreferrer"
+              aria-label="GitHub Profile">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/prem-wadhwani-829b85338" target="_blank" rel="noopener noreferrer"
+              aria-label="LinkedIn Profile">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
+            </a>
+            <a href="mailto:premwadhwani114@gmail.com" aria-label="Send Email">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Sleek Java Terminal / Code Card -->
+        <div class="hero-code-wrapper" aria-label="Java Developer Code Terminal">
+          <div class="code-card">
+            <div class="code-card-header">
+              <div class="code-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <div class="code-title">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="code-java-icon" aria-hidden="true"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+                <span>Developer.java</span>
+              </div>
+              <div class="code-status">
+                <span class="status-pulse"></span>
+                <span>Active</span>
+              </div>
+            </div>
+
+            <div class="code-body">
+              <pre><code><span class="line-num">01</span><span class="code-keyword">public class</span> <span class="code-class">Developer</span> {
+<span class="line-num">02</span>  <span class="code-keyword">private String</span> name = <span class="code-string">"Prem Wadhwani"</span>;
+<span class="line-num">03</span>  <span class="code-keyword">private String</span> role = <span class="code-string">"Java Developer"</span>;
+<span class="line-num">04</span>  <span class="code-keyword">private String</span> college = <span class="code-string">"IIST, Indore"</span>;
+<span class="line-num">05</span>  <span class="code-keyword">private String</span> batch = <span class="code-string">"2024 — 2028"</span>;
+<span class="line-num">06</span>
+<span class="line-num">07</span>  <span class="code-comment">// Core Tech Stack</span>
+<span class="line-num">08</span>  <span class="code-keyword">private String</span>[] stack = {
+<span class="line-num">09</span>    <span class="code-string">"Java"</span>, <span class="code-string">"Servlets"</span>, <span class="code-string">"JSP"</span>,
+<span class="line-num">10</span>    <span class="code-string">"JDBC"</span>, <span class="code-string">"Swing"</span>, <span class="code-string">"SQL"</span>
+<span class="line-num">11</span>  };<span class="code-cursor"></span>
+<span class="line-num">12</span>}</code></pre>
+            </div>
+
+            <div class="code-card-footer">
+              <span class="code-badge"><span class="badge-dot"></span> Java 17+</span>
+              <span class="code-badge">UTF-8</span>
+              <span class="code-badge">Ready to Build</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         ABOUT SECTION
+         ============================== -->
+    <section class="section about" id="about">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="section-number" aria-hidden="true">01</span>
+          About Me
+        </h2>
+
+        <div class="about-grid">
+          <div class="about-photo-wrapper">
+            <div class="profile-photo">
+              <img src="assets/images/profile.jpeg" alt="Prem Wadhwani — Computer Science Student and Java Developer"
+                loading="eager" onerror="this.style.display='none'">
+              <span class="profile-initials" aria-hidden="true">PW</span>
+            </div>
+            <!-- Decorative ring -->
+            <div class="photo-ring" aria-hidden="true"></div>
+          </div>
+
+          <div class="about-content">
+            <p class="about-lead">
+              Passionate Computer Science student and aspiring Java Developer with a strong foundation in
+              object-oriented programming, data structures, and web technologies.
+            </p>
+            <p>
+              Currently pursuing B.Tech in CSE at Indore Institute of Science and Technology, I thrive on building
+              practical applications that solve real-world problems — from web-based management systems to desktop media
+              players. A Smart India Hackathon participant with a drive to write clean, efficient code.
+            </p>
+
+            <div class="about-highlights">
+              <div class="highlight-card">
+                <span class="highlight-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                    <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                  </svg>
+                </span>
+                <div>
+                  <strong>B.Tech CSE</strong>
+                  <span>2024 – 2028</span>
+                </div>
+              </div>
+              <div class="highlight-card">
+                <span class="highlight-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="16 18 22 12 16 6" />
+                    <polyline points="8 6 2 12 8 18" />
+                  </svg>
+                </span>
+                <div>
+                  <strong>Java Developer</strong>
+                  <span>Servlets · Swing · JDBC</span>
+                </div>
+              </div>
+              <div class="highlight-card">
+                <span class="highlight-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                    <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                    <path d="M4 22h16" />
+                    <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
+                    <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
+                    <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" />
+                  </svg>
+                </span>
+                <div>
+                  <strong>Hackathon Participant</strong>
+                  <span>SIH &amp; College Events</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         SKILLS SECTION
+         ============================== -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="section-number" aria-hidden="true">02</span>
+          Skills &amp; Expertise
+        </h2>
+
+        <div class="skills-grid">
+          <!-- Programming Languages -->
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="16 18 22 12 16 6" />
+                <polyline points="8 6 2 12 8 18" />
+              </svg>
+              <h3>Programming Languages</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">C</span>
+              <span class="skill-tag">C++</span>
+              <span class="skill-tag highlight">Java</span>
+            </div>
+          </div>
+
+          <!-- Web Technologies -->
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="2" y1="12" x2="22" y2="12" />
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+              </svg>
+              <h3>Web Technologies</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">HTML</span>
+              <span class="skill-tag">CSS</span>
+            </div>
+          </div>
+
+          <!-- Java Technologies & APIs -->
+          <div class="skill-card card-wide">
+            <div class="skill-card-header">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="m18 16 4-4-4-4" />
+                <path d="m6 8-4 4 4 4" />
+                <path d="m14.5 4-5 16" />
+              </svg>
+              <h3>Java Technologies &amp; APIs</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag highlight">Java Servlets</span>
+              <span class="skill-tag highlight">JSP</span>
+              <span class="skill-tag highlight">JDBC</span>
+              <span class="skill-tag">Java Swing &amp; AWT</span>
+              <span class="skill-tag">Collections Framework</span>
+              <span class="skill-tag">Multithreading</span>
+              <span class="skill-tag">JLayer Audio API</span>
+            </div>
+          </div>
+
+          <!-- Core CS Fundamentals -->
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+              </svg>
+              <h3>Core CS Fundamentals</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Data Structures &amp; Algorithms</span>
+              <span class="skill-tag">Object-Oriented Programming</span>
+              <span class="skill-tag">DBMS</span>
+              <span class="skill-tag">Exception Handling</span>
+            </div>
+          </div>
+
+          <!-- Tools & Platforms -->
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path
+                  d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+              </svg>
+              <h3>Tools &amp; Platforms</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Apache NetBeans</span>
+              <span class="skill-tag">VS Code</span>
+              <span class="skill-tag">Git &amp; GitHub</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         PROJECTS SECTION
+         ============================== -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="section-number" aria-hidden="true">03</span>
+          Projects
+        </h2>
+
+        <div class="projects-grid">
+          <!-- Project 1: Library Management System -->
+          <article class="project-card">
+            <div class="project-card-header">
+              <span class="project-type">Web Application</span>
+              <span class="project-number" aria-hidden="true">01</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">Library Management System</h3>
+              <p class="project-description">
+                A comprehensive web-based library management system that enables users to manage books, track borrowing
+                records, and handle library operations through an intuitive browser interface powered by Java backend
+                technologies.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Java Servlets</span>
+                <span class="tech-tag">JSP</span>
+                <span class="tech-tag">SQL</span>
+                <span class="tech-tag">JDBC</span>
+                <span class="tech-tag">HTML/CSS</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://github.com/PremWadhwani" target="_blank" rel="noopener noreferrer" class="project-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+                </svg>
+                View on GitHub
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2: Media Player -->
+          <article class="project-card">
+            <div class="project-card-header">
+              <span class="project-type">Desktop Application</span>
+              <span class="project-number" aria-hidden="true">02</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">Local Media Player</h3>
+              <p class="project-description">
+                A feature-rich desktop media player application built with Java Swing, capable of playing local audio
+                files with an intuitive graphical interface. Leverages multithreading for smooth playback and responsive
+                UI interactions.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Java Swing</span>
+                <span class="tech-tag">JLayer Library</span>
+                <span class="tech-tag">Multithreading</span>
+                <span class="tech-tag">File I/O</span>
+                <span class="tech-tag">OOP Design</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://github.com/PremWadhwani" target="_blank" rel="noopener noreferrer" class="project-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+                </svg>
+                View on GitHub
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         EDUCATION SECTION
+         ============================== -->
+    <section class="section education" id="education">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="section-number" aria-hidden="true">04</span>
+          Education
+        </h2>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2024 — 2028</span>
+              <h3>Bachelor of Technology in Computer Science &amp; Engineering</h3>
+              <p class="timeline-institution">Indore Institute of Science and Technology</p>
+              <p class="timeline-details">
+                Coursework in Data Structures, Object-Oriented Programming, Database Management Systems, Java
+                Technologies, and Web Development. Active participant in hackathons and coding events including the
+                Smart India Hackathon (SIH).
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         CERTIFICATIONS SECTION
+         ============================== -->
+    <section class="section certifications" id="certifications">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="section-number" aria-hidden="true">05</span>
+          Certifications
+        </h2>
+
+        <div class="certs-grid">
+          <div class="cert-card">
+            <div class="cert-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="8" r="6" />
+                <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" />
+              </svg>
+            </div>
+            <h3>Programming in Java</h3>
+            <p class="cert-issuer">NPTEL</p>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="8" r="6" />
+                <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" />
+              </svg>
+            </div>
+            <h3>C Programming — Angaar Batch</h3>
+            <p class="cert-issuer">Angaar Batch</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         CONTACT SECTION
+         ============================== -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="section-number" aria-hidden="true">06</span>
+          Get In Touch
+        </h2>
+
+        <p class="contact-intro">
+          Have a question, want to collaborate, or just want to say hello? Feel free to reach out — I'd love to hear
+          from you.
+        </p>
+
+        <div class="contact-grid">
+          <!-- Contact Form (Visual Only) -->
+          <form class="contact-form" action="#" method="POST" aria-label="Contact form">
+            <div class="form-group">
+              <label for="contact-name">Name</label>
+              <input type="text" id="contact-name" name="name" placeholder="Your name" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Email</label>
+              <input type="email" id="contact-email" name="email" placeholder="your.email@example.com" required
+                autocomplete="email">
+            </div>
+            <div class="form-group">
+              <label for="contact-subject">Subject</label>
+              <input type="text" id="contact-subject" name="subject" placeholder="What is this about?">
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" name="message" rows="5" placeholder="Your message…" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              Send Message
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="22" y1="2" x2="11" y2="13" />
+                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+              </svg>
+            </button>
+            <p class="form-note">
+              <small>* This form is for display purposes only. To send a message, please email me directly.</small>
+            </p>
+          </form>
+
+          <!-- Direct Contact Info -->
+          <div class="contact-info">
+            <h3>Direct Contact</h3>
+            <div class="contact-methods">
+              <a href="mailto:premwadhwani114@gmail.com" class="contact-method">
+                <span class="contact-method-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="4" width="20" height="16" rx="2" />
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                  </svg>
+                </span>
+                <div>
+                  <strong>Email</strong>
+                  <span>premwadhwani114@gmail.com</span>
+                </div>
+              </a>
+              <a href="https://www.linkedin.com/in/prem-wadhwani-829b85338" target="_blank" rel="noopener noreferrer"
+                class="contact-method">
+                <span class="contact-method-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                  </svg>
+                </span>
+                <div>
+                  <strong>LinkedIn</strong>
+                  <span>prem-wadhwani</span>
+                </div>
+              </a>
+              <a href="https://github.com/PremWadhwani" target="_blank" rel="noopener noreferrer"
+                class="contact-method">
+                <span class="contact-method-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+                  </svg>
+                </span>
+                <div>
+                  <strong>GitHub</strong>
+                  <span>PremWadhwani</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="contact-cta">
+              <p>Prefer a quick email?</p>
+              <a href="mailto:premwadhwani114@gmail.com" class="btn btn-outline">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="4" width="20" height="16" rx="2" />
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                </svg>
+                premwadhwani114@gmail.com
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==============================
+       FOOTER
+       ============================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a class="footer-logo" href="#hero" aria-label="Back to top">PW<span class="logo-dot">.</span></a>
+        <p>Computer Science Student &amp; Java Developer</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-social">
+        <h4>Connect</h4>
+        <div class="social-links">
+          <a href="https://github.com/PremWadhwani" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/prem-wadhwani-829b85338" target="_blank" rel="noopener noreferrer"
+            aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+          </a>
+          <a href="mailto:premwadhwani114@gmail.com" aria-label="Email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Prem Wadhwani. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <a href="#top" class="back-to-top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15" />
+    </svg>
+  </a>
+
+  <!-- Theme toggle persistence & synchronization -->
+  <script>
+    (function () {
+      var toggle = document.getElementById('theme-toggle');
+      if (!toggle) return;
+
+      var saved = null;
+      try {
+        saved = localStorage.getItem('theme');
+      } catch (e) { }
+
+      if (saved === 'light') {
+        toggle.checked = true;
+        document.documentElement.setAttribute('data-theme', 'light');
+      } else if (saved === 'dark') {
+        toggle.checked = false;
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+
+      toggle.addEventListener('change', function () {
+        var theme = this.checked ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', theme);
+        try {
+          localStorage.setItem('theme', theme);
+        } catch (e) { }
+      });
+    })();
+  </script>
+
+</body>
+
+</html>
